@@ -33,7 +33,7 @@ h2 {
     text-decoration: none;
     color: #ddd;
     @include text-shadow (0px 0px 80px #fff);
-    @include transition (all 10s ease-in);
+//    @include transition (all 10s ease-in);
     &:hover {
       color: #aaa;
       @include transition (all 3s ease-in);
