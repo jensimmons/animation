@@ -1,0 +1,166 @@
+
+//-----------------------------------------------------------------------
+// Whole Page
+//-----------------------------------------------------------------------
+
+html {
+  background: $background;
+}
+
+body {
+  position: relative;
+}
+
+//-----------------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------------
+
+hgroup {
+  text-align: center;
+  border-bottom: 1px solid $line-color;
+  clear: both;
+  @include trailer(2, $h1-font-size);
+  h1 {
+    @include adjust-font-size-to(24px);
+    @include leader(0.2, $h1-font-size);
+    @include trailer(0, $h1-font-size);
+  }
+  h1:last-child {
+    @include adjust-font-size-to(38px);
+    @include leader(0.1, $h1-font-size);
+    @include trailer(0.3, $h1-font-size);  
+  }
+}
+
+
+//-----------------------------------------------------------------------
+// Asides
+//-----------------------------------------------------------------------
+
+aside {
+
+}
+
+
+//-----------------------------------------------------------------------
+// Pre and Code
+//-----------------------------------------------------------------------
+
+.code-example pre {
+
+}
+pre code {
+
+}
+
+
+//-----------------------------------------------------------------------
+// Figures
+//-----------------------------------------------------------------------
+
+figure {
+  @include clearfix;
+}
+
+
+//-----------------------------------------------------------------------
+// Video
+//-----------------------------------------------------------------------
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+  margin: 1em 0;
+}
+
+
+//-----------------------------------------------------------------------
+// Tables
+//-----------------------------------------------------------------------
+
+table { 
+  font-family: $alt-font;  
+  @include adjust-font-size-to(13px);
+	width: 100%; 
+	border-collapse: collapse; 
+	margin: 0.3em 0 1.5em;
+	img {
+  	width: 100px;
+	}
+}
+table code {
+  @include adjust-font-size-to(14px);
+}
+tr {
+  background: #f5f5f5;
+}
+tr:nth-of-type(odd) { 
+	background: #ebebeb; 
+}
+th { 
+	background: #a3a3a3; 
+  border: 4px solid #fff; 
+	color: #fff; 
+	font-weight: normal; 
+}
+td {
+  border: 4px solid #fff; 
+}
+td, th { 
+	padding: 12px 10px 10px; 
+	text-align: left; 
+	vertical-align: top;
+	line-height: 1.4em;
+}
+td ul {
+	padding-left: 1.2em;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+@media only screen and (max-width: 45em) { // 720px
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead {
+  	tr { 
+  	   @include element-invisible();
+  	}
+  }
+	tr { 
+    border-bottom: 4px solid #fff; 
+  }
+  tr:last-child { 
+		border-bottom: none; 
+  }
+  tr:nth-of-type(odd) { 
+  	background: #d5d5d5; 
+  }
+	td { 
+		border: none;
+		position: relative;
+		padding-left: 30%; 
+	}
+	td:before { 
+		position: absolute;
+		top: 12px;
+		left: 10px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		content:""attr(data-label)"";  /*	Label the data */
+  }
+  tr td {
+    padding-bottom: 0;
+  }
+  tr td:last-child { 
+  	padding-bottom: 12px; 
+	}
+}
+
+
+//-----------------------------------------------------------------------
+// Various Content
+//-----------------------------------------------------------------------
+
+

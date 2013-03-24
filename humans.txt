@@ -1,0 +1,23 @@
+# humanstxt.org
+
+Created by 
+Jen Simmons
+Brooklyn, New York
+twitter: @jensimmons 
+
+
+/* THANKS TO */
+
+Google Chrome Mobile Experiments
+
+
+/* COMPONENTS */  
+
+bits of HTML5 Boilerplate: http://html5boilerplate.com
+bits of 320 and Up: 		http://stuffandnonsense.co.uk/projects/320andup 
+Normalize: http://necolas.github.com/normalize.css
+
+jQuery: 		http://jquery.com
+Modernizr: 		http://modernizr.com
+Selectivizr: 		http://selectivizr.com
+
