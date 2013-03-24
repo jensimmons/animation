@@ -9,7 +9,7 @@ http://jensimmons.com
 
 /* THANKS TO */
 
-Google Chrome Mobile Experiments
+Google Chrome Experiments
 
 
 /* PARTS & PIECES */  
