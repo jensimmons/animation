@@ -14,13 +14,12 @@ Google Chrome Experiments
 
 /* PARTS & PIECES */  
 
-bits of HTML5 Boilerplate: http://html5boilerplate.com
-bits of 320 and Up: 		http://stuffandnonsense.co.uk/projects/320andup 
-Normalize: http://necolas.github.com/normalize.css
-
-jQuery: 		http://jquery.com
-Modernizr: 		http://modernizr.com
-Selectivizr: 		http://selectivizr.com
+bits of HTML5 Boilerplate:    http://html5boilerplate.com
+bits of 320 and Up: 		      http://stuffandnonsense.co.uk/projects/320andup 
+Normalize:                    http://necolas.github.com/normalize.css
+jQuery: 		                  http://jquery.com
+Modernizr: 	                  http://modernizr.com
+Selectivizr:                  http://selectivizr.com
 
 I use a lot of backgrounds from http://subtlepatterns.com.
 I'm liberally borrowing code from Codepen projects. http://codepen.io
