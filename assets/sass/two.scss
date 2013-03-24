@@ -1,0 +1,314 @@
+// Import Compass: http://compass-style.org
+@import "compass";
+
+// Import additional mixins
+@import "mixins";
+
+// Reset
+@import "normalize";
+* {
+  @include box-sizing(border-box);
+}
+
+// Set universal variables
+@import "variables";
+
+// Import fonts
+@import "fontface";
+
+
+body {
+  background: #ddd;
+  color: #ddd;
+}
+h2 {
+  text-align: center;
+  margin-top: 100px;
+  margin-top: 30vh;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 200px;
+  color: #ddd;
+  a {
+    font-size: 200px;
+    @include transition (all 10s ease-in);
+    text-decoration: none;
+    color: #ddd;
+    @include text-shadow (0px 0px 80px #fff);
+    &:hover {
+      color: #aaa;
+      @include transition (all 3s ease-in);
+    }
+  }
+}
+
+@import "base";
+
+
+//-----------------------------------------------------------------------
+// Home Page
+//-----------------------------------------------------------------------
+
+// Team Page Type
+
+.page-team h1.title {
+  display: none;
+}
+
+
+// Card Front
+.view-projects img,
+.view-people img {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+.view-projects figure,
+.view-people figure {
+  margin: 0;
+}
+
+// Card Back
+.view-projects a,
+.view-projects a:hover,
+.view-people a,
+.view-people a:hover {
+  text-decoration: none;
+}
+.view-projects li,
+.view-people li {
+  position: relative;
+}
+.view-projects li .back,
+.view-people li .back {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #555;
+  background: rgba(80, 80, 80, 0.75);
+  color: #fff;
+  padding: 10%;
+}
+.view-projects li h3,
+.view-people li h3 {
+  color: #fff;
+  margin: 1.5em 0 0.5em;
+  font-size: 220%;
+  font-weight: 300;
+}
+.view-projects li a,
+.view-people li a {
+  color: #fff;
+  text-decoration: underline;
+}
+.view-projects li p,
+.view-people li p {
+  font-weight: 300;  
+  font-size: 95%;
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+.back img {
+  float: left;
+  width: 28%;
+  margin-right: 10%;
+}
+
+// Card Layout
+.view-projects ul,
+.view-people ul {
+  padding-left: 0;
+  list-style: none;
+  list-style-image: none;
+}
+.view-projects ul li,
+.view-people ul li {
+  width: 100%; // one across
+  padding: 0;
+}
+.ie6-8 .view-people ul li {
+  float: left;
+}
+@media all and (min-width: 480px) {
+  .view-projects ul li,
+  .view-people ul li {
+    float: left;
+    width: 50%; // two across
+  }
+}
+@media all and (min-width: 600px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 33.3333333%; // three across
+    h3 {
+      font-size: 190%;
+    }
+  }
+}
+@media all and (min-width: 700px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 25%; // four across
+    h3 {
+      font-size: 170%;
+    }
+  }
+}
+@media all and (min-width: 800px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 20%; // five across
+  }
+}
+@media all and (min-width: 960px) { // matches the breakpoint when the number of boxes increases
+  .view-projects ul li h3,
+  .view-people ul li h3 {
+    font-size: 150%;
+  }
+}
+@media all and (min-width: 1050px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 16.6666667%; // six across
+    h3 {
+      font-size: 190%;
+    }
+  }
+}
+@media all and (min-width: 1200px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 14.2857143%; // seven across
+  }
+}
+@media all and (min-width: 1500px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 12.5%; // eight across
+    h3 {
+      font-size: 210%;
+    }
+  }
+}
+@media all and (min-width: 1800px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 11.1111111%; // nine across
+  }
+}
+@media all and (min-width: 2000px) {
+  .view-projects ul li,
+  .view-people ul li {
+    width: 10%; // ten across
+  }
+}
+// Old IE gets 6 across (~960)
+.ie6-8 .view-projects ul li,
+.ie6-8 .view-people ul li {
+  width: 16.6666667%; // six across
+}
+
+
+
+
+// 3D Transformations
+.view-projects li,
+.view-people li {
+	@include perspective(600px);
+}
+.view-projects li div.figure,
+.view-people li figure,
+.view-people li div.figure {
+  @include box-shadow (0 1px 5px rgba(0,0,0,0.9));
+  @include transform (rotateY(0deg));
+  @include transform-style (preserve-3d);
+	-webkit-backface-visibility: hidden; // don't write this using compass syntax
+	   -moz-backface-visibility: hidden; // it doesn't work
+	    -ms-backface-visibility: hidden;
+	     -o-backface-visibility: hidden;
+	        backface-visibility: hidden;
+  @include transition (all .4s ease-in-out);
+}
+.view-people li .field-name-field-project img {
+  @include box-shadow (none);
+  @include transform-style (none);
+  -webkit-backface-visibility: visible; // don't write this using compass syntax
+     -moz-backface-visibility: visible; // it doesn't work
+      -ms-backface-visibility: visible;
+       -o-backface-visibility: visible;
+          backface-visibility: visible;
+  @include transition (none);
+}
+.view-projects li .back,
+.view-people li .back {
+  @include transform (rotateY(180deg));
+	-webkit-backface-visibility: hidden; // don't write this using compass syntax
+	   -moz-backface-visibility: hidden; // it doesn't work
+	    -ms-backface-visibility: hidden;
+	     -o-backface-visibility: hidden;
+	        backface-visibility: hidden;  
+  @include transition (all .4s ease-in-out);
+}
+.ie9, .ie6-8 {
+  .view-projects li .back,
+  .view-people li .back {
+    visibility: hidden;
+  }
+}
+
+.view-projects li.flip div.figure,
+.view-people li.flip figure,
+.view-people li.flip div.figure {
+  @include transform (rotateY(180deg));
+}
+.ie9, .ie6-8 {
+  .view-projects li.flip div.figure,
+  .view-people li.flip figure,
+  .view-people li.flip div.figure {
+    visibility: hidden;
+  }
+}
+
+.view-projects li.flip .field-name-field-project img,
+.view-people li.flip .field-name-field-project img {
+  @include transform (rotateY(0deg));
+}
+.view-projects li.flip .back,
+.view-people li.flip .back {
+  @include transform (rotateY(0deg));
+}
+
+.ie9, .ie6-8 {
+  .view-projects li.flip .back,
+  .view-people li.flip .back {
+    visibility: visible;
+  }
+}
+
+#countdown-timer {
+  color: #ec1f24;
+  font-weight: bold;
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0em;
+
+  #timer-output {
+    font-size: 180%;
+    line-height: 1.05;
+    text-align: right;
+    position: relative;
+  }
+  .days {
+    display: inline;
+
+  }
+  .hours,
+  .minutes,
+  .seconds {
+    display: inline;
+  }
+}
