@@ -341,9 +341,10 @@ html {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/one\.scss}line{font-family:\0000320}}
 body {
   background: #ddd;
+  color: #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/one\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/one\.scss}line{font-family:\0000324}}
 h2 {
   text-align: center;
   margin-top: 100px;
@@ -352,15 +353,20 @@ h2 {
   font-style: italic;
   font-weight: normal;
   font-size: 200px;
-  color: #fff;
+  color: #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/one\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/one\.scss}line{font-family:\0000333}}
 h2 a {
+  font-size: 200px;
+  -webkit-transition: all 10s ease-in;
+  -moz-transition: all 10s ease-in;
+  -o-transition: all 10s ease-in;
+  transition: all 10s ease-in;
   text-decoration: none;
   color: #ddd;
   text-shadow: 0px 0px 80px white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/one\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/one\.scss}line{font-family:\0000339}}
 h2 a:hover {
   color: #aaa;
   -webkit-transition: all 3s ease-in;
