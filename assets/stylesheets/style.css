@@ -349,7 +349,7 @@ html {
    ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/_typography\.scss}line{font-family:\0000311}}
 body {
-  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #1b1d1e;
 }
 
@@ -434,7 +434,7 @@ p.caption {
 a,
 a:link,
 a:visited {
-  color: #b12b0a;
+  color: #4b78cc;
   text-decoration: underline;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/_typography\.scss}line{font-family:\0000374}}
@@ -443,7 +443,7 @@ a:link:hover,
 a:link:focus,
 a:visited:hover,
 a:visited:focus {
-  color: #e1370d;
+  color: #7396d7;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/_typography\.scss}line{font-family:\0000378}}
