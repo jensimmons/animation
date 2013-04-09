@@ -27,7 +27,27 @@
   <![endif]-->
 
   <script src="../assets/js/jquery-1.9.1.min.js"></script>
-  <script src="../assets/js/two.min.js"></script>
+  <script>
+  		$(document).ready(function(){
+			
+			// This can be done without javascript, but using it instead of a:hover
+			// let's us trigger the hover event when the photo is tapped on a touch device
+			$('.card').hover(function(){
+				$(this).addClass('flip');
+			},function(){
+				$(this).removeClass('flip');
+			});
+			
+			// set up click/tap panels
+			$('.click').toggle(function(){
+				$(this).addClass('flip');
+			},function(){
+				$(this).removeClass('flip');
+			});
+			
+			
+		});
+	</script>
       
 </head>
 
@@ -35,79 +55,55 @@
 
   <main role="main">
     
-    <ul>
-      <li class="hover">
-        <figure><img src="2163141111_37899b0986_o.jpg"></figure>
-        <a class="back" src="">
+    <figure class="card">
+      <img src="2163141111_37899b0986_o.jpg">
+      <figcaption class="back">Suffragettes posting bills. [<a src="http://www.flickr.com/photos/library_of_congress/2163141111/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="3065184717_dfe5d51a70_o.jpg">
+      <figcaption class="back">Suffrage and labor activist Flora Dodge "Fola" La Follette (1882-1970), social reformer and missionary Rose Livingston and a young striker during a garment strike in New York City in 1913. [<a src="http://www.flickr.com/photos/library_of_congress/3065184717/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2163710296_a0a03c639f_o.jpg">
+      <figcaption class="back">Helene Dutrieu (1877-1961), Belgian aviator, cyclist, hospital director and journalist. [<a src="http://www.flickr.com/photos/library_of_congress/2163710296/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2163776570_fa0a5b31fe_o.jpg">
+      <figcaption class="back">Dr. Mary Hobart. [<a src="http://www.flickr.com/photos/library_of_congress/2163776570/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2449482700_659fa5f363_o.jpg">
+      <figcaption class="back">Women suffrage hikers General Rosalie Jones, Jessie Stubbs, and Colonel Ida Craft, who is wearing a bag labeled "Votes for Women pilgrim leaflets" and carrying a banner with a notice for a "Woman Suffrage Party. Mass meeting. Opera House. Brooklyn Academy of Music. January 9th at 8:15 pm". [<a src="http://www.flickr.com/photos/library_of_congress/2449482700/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2555558153_e063a943bc_o.jpg">
+      <figcaption class="back">Abigail Scott Duniway signing Oregon's Equal Suffrage Proclamation on Nov. 30, 1912, while Governor Oswald West and Viola M. Coe look on. [<a src="http://www.flickr.com/photos/library_of_congress/2555558153/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2595542338_397e4de8fc_o.jpg">
+      <figcaption class="back">Reverend Doctor Anna Howard Shaw (1847 - 1919). A leader in the women's suffrage movement, Shaw was a master orator for social justice, and the first woman to be ordained by the Protestant Methodist Church. She was the first living American woman to be awarded the U.S. Distinguished Service Medal. [<a src="http://www.flickr.com/photos/library_of_congress/2595542338/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2368281179_ec97897e62_o.jpg">
+      <figcaption class="back">Florence Jaffray Hurst "Daisy" Harriman, chairman and founder of the Women's National Wilson and Marshall organization with banner in 1912. [<a src="http://www.flickr.com/photos/library_of_congress/2368281179/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2163124243_b4362cdf93_o.jpg">
+      <figcaption class="back">Public Schools Athletic League, 1912. [<a src="http://www.flickr.com/photos/library_of_congress/2163124243/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2615537545_75eb189f74_o.jpg">
+      <figcaption class="back">Hedwig Reicher as Columbia in Suffrage Pageant. Photo taken in front of the Treasury Building at the Woman Suffrage Parade in Washington, D.C., March 3, 1913. [<a src="http://www.flickr.com/photos/library_of_congress/2615537545/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2615546583_40f91c6457_o.jpg">
+      <figcaption class="back">Photo taken at the National American Woman Suffrage Association parade held in Washington, D.C., March 3, 1913 showing (left to right) Mrs. Russell McLennan, Mrs. Althea Taft, Mrs. Lew Bridges, Mrs. Richard Coke Burleson, Alberta Hill and Miss F. Ragsdale. [<a src="http://www.flickr.com/photos/library_of_congress/2615546583/in/set-72157614805050380/">source</a>]</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="2616374812_bf0d41e20f_o.jpg">
+      <figcaption class="back">Suffrage parade with Mrs. W. Albert Wood and Mrs. R.S. Burleson, 1913 March 3. [<a src="http://www.flickr.com/photos/library_of_congress/2616374812/in/set-72157614805050380">source</a>]</figcaption>
+    </figure>
 
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="3065184717_dfe5d51a70_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2163710296_a0a03c639f_o.jpg"></figure>
-        <a class="back" src="">
-
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2163776570_fa0a5b31fe_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2449482700_659fa5f363_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2555558153_e063a943bc_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2595542338_397e4de8fc_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2368281179_ec97897e62_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2163124243_b4362cdf93_o.jpg"></figure>
-        <a class="back" src="">
-
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2615537545_75eb189f74_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>
-      <li class="hover">
-        <figure><img src="2615546583_40f91c6457_o.jpg"></figure>
-        <a class="back" src="http://www.flickr.com/photos/library_of_congress/2615546583/in/set-72157614805050380/">
-Photo taken at the National American Woman Suffrage Association parade held in Washington, D.C., March 3, 1913 showing (left to right) Mrs. Russell McLennan, Mrs. Althea Taft, Mrs. Lew Bridges, Mrs. Richard Coke Burleson, Alberta Hill and Miss F. Ragsdale.</a>
-      </li>
-      <li class="hover">
-        <figure><img src="2616374812_bf0d41e20f_o.jpg"></figure>
-        <a class="back" src="">
-          
-        </a>
-      </li>      
-    </ul>
 
   </main>
   
