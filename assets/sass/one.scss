@@ -21,7 +21,10 @@ body {
   background: #ddd;
   color: #ddd;
 }
-a {
+a,
+a:link,
+a:visited,
+a:-webkit-any-link {
   color: #ddd;
   text-decoration: none;
   font-size: 200px;
