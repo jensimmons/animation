@@ -20,19 +20,51 @@
 // Import Animation Definitions
 @import "animations";
 
+
 // ---------------- Universal -----------------------------------------
 
+html {
+  background: #000;
+  @include background-image (radial-gradient(farthest-side at 53% 58%, #272F3C 0%, #000 100%));
+  perspective: 1000;
+}
 a, a:link, a:visited {
   text-decoration: none;
 }
-a.link {
+a.fliplink {
   text-align: center;
   display: block;
 }
 
+
+// ---------------- Action -----------------------------------------
+
+
+.flip {
+  -webkit-animation: 1s ease-in-out 0s normal none 1 shrinkback;
+  animation: 1s ease-in-out 0s normal none 1 shrinkback;
+  .fliplink {
+    display: none;
+  }
+  transform-style: preserve-3d;
+  
+  transform: scale(0.4);  
+  transition-property: -webkit-transform;
+  transition-duration: 0;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  
+  -webkit-transform: scale(0.4);  
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 0;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+}
+
+
 // ---------------- Breath -----------------------------------------
 
-.breath {
+#breath {
   background-color: #fcf9f1;
   min-height: 50vh;
   h1 {
@@ -76,10 +108,19 @@ a.link {
   }
 }
 
-// ---------------- Action -----------------------------------------
- .flip {
-   transform: rotateX(180deg);
- }
+
+// ---------------- Presence -----------------------------------------
+
+#presence {
+  display: none;
+}
+
+
+// ---------------- Navigation -----------------------------------------
+
+nav {
+  display: none;
+}
 
 
 // ----------------  -----------------------------------------
