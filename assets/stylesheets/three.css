@@ -582,98 +582,40 @@ hr {
   }
 }
 
+/*
 @keyframes spinX {
-  /* line 16, ../sass/_animations.scss */
-  50% {
-    transform: rotateX(180deg);
-  }
-
-  /* line 17, ../sass/_animations.scss */
-  100% {
-    transform: rotateX(0deg);
-  }
+  50%   {transform: rotateX(180deg)}
+  100%  {transform: rotateX(0deg)}
 }
-
 @-webkit-keyframes spinX {
-  /* line 20, ../sass/_animations.scss */
-  50% {
-    -webkit-transform: rotateX(180deg);
-  }
-
-  /* line 21, ../sass/_animations.scss */
-  100% {
-    -webkit-transform: rotateX(0deg);
-  }
+  50%   {-webkit-transform: rotateX(180deg)}
+  100%  {-webkit-transform: rotateX(0deg)}
 }
+
 
 @keyframes shrink {
-  /* line 26, ../sass/_animations.scss */
-  100% {
-    transform: scale(0.5);
-  }
+  100%  {transform: scale(0.5)}
+}
+@-webkit-keyframes shrink {
+  100%  {-webkit-transform: scale(0.5)}
 }
 
-@-webkit-keyframes shrink {
-  /* line 29, ../sass/_animations.scss */
-  100% {
-    -webkit-transform: scale(0.5);
-  }
-}
 
 @keyframes shrinkback {
-  /* line 34, ../sass/_animations.scss */
-  0% {
-    transform: rotateX(0deg) scale(1);
-  }
-
-  /* line 35, ../sass/_animations.scss */
-  25% {
-    transform: rotateX(180deg) scale(0.85);
-  }
-
-  /* line 36, ../sass/_animations.scss */
-  50% {
-    transform: rotateX(0deg) scale(0.7);
-  }
-
-  /* line 37, ../sass/_animations.scss */
-  75% {
-    transform: rotateX(180deg) scale(0.55);
-  }
-
-  /* line 38, ../sass/_animations.scss */
-  100% {
-    transform: rotateX(0deg) scale(0.4);
-  }
+  0%    {transform: rotateX(0deg) scale(1)}
+  25%   {transform: rotateX(180deg) scale(0.85)}
+  50%   {transform: rotateX(0deg) scale(0.7)}
+  75%   {transform: rotateX(180deg) scale(0.55)}
+  100%  {transform: rotateX(0deg) scale(0.4)}
 }
-
 @-webkit-keyframes shrinkback {
-  /* line 41, ../sass/_animations.scss */
-  0% {
-    -webkit-transform: rotateX(0deg) scale(1);
-  }
-
-  /* line 42, ../sass/_animations.scss */
-  25% {
-    -webkit-transform: rotateX(180deg) scale(0.85);
-  }
-
-  /* line 43, ../sass/_animations.scss */
-  50% {
-    -webkit-transform: rotateX(0deg) scale(0.7);
-  }
-
-  /* line 44, ../sass/_animations.scss */
-  75% {
-    -webkit-transform: rotateX(180deg) scale(0.55);
-  }
-
-  /* line 45, ../sass/_animations.scss */
-  100% {
-    -webkit-transform: rotateX(0deg) scale(0.4);
-  }
+  0%    {-webkit-transform: rotateX(0deg) scale(1)}
+  25%   {-webkit-transform: rotateX(180deg) scale(0.85)}
+  50%   {-webkit-transform: rotateX(0deg) scale(0.7)}
+  75%   {-webkit-transform: rotateX(180deg) scale(0.55)}
+  100%  {-webkit-transform: rotateX(0deg) scale(0.4)}
 }
-
+*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000326}}
 html {
   background: #000;
@@ -682,47 +624,72 @@ html {
   background-image: -moz-radial-gradient(farthest-side at 53% 58%, #272f3c 0%, #000000 100%);
   background-image: -o-radial-gradient(farthest-side at 53% 58%, #272f3c 0%, #000000 100%);
   background-image: radial-gradient(farthest-side at 53% 58%, #272f3c 0%, #000000 100%);
-  perspective: 1000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000330}}
+body {
+  perspective: 1000;
+  transform-style: preserve-3d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000334}}
 a, a:link, a:visited {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000334}}
-a.fliplink {
-  text-align: center;
-  display: block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000343}}
+/*
 .flip {
-  -webkit-animation: 1s ease-in-out 0s normal none 1 shrinkback;
-  animation: 1s ease-in-out 0s normal none 1 shrinkback;
-  transform-style: preserve-3d;
-  transform: scale(0.4);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
   transition-property: -webkit-transform;
-  transition-duration: 0;
+  transition-duration: 3s;
   transition-timing-function: linear;
-  transition-delay: 1s;
-  -webkit-transform: scale(0.4);
+  
+  -webkit-transform: scale(0.4);  
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 0;
   -webkit-transition-timing-function: linear;
   -webkit-transition-delay: 1s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000346}}
-.flip .fliplink {
-  display: none;
+*/
+/* Flipping spinning backwards
+.flip {
+  -webkit-animation: 1s ease-in-out 0s normal none 1 shrinkback;
+  animation: 1s ease-in-out 0s normal none 1 shrinkback;
+  .fliplink {
+    display: none;
+  }
+  transform-style: preserve-3d;
+  
+  transform: scale(0.4);  
+  transition-property: -webkit-transform;
+  transition-duration: 0;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  
+  -webkit-transform: scale(0.4);  
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 0;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000367}}
-#breath {
-  background-color: #fcf9f1;
-  min-height: 50vh;
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000382}}
+#breath header {
+  background: #d8ecf3 url("../../03/sky.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  padding: 50vh 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000387}}
+#breath header div {
+  -webkit-animation: 6000ms linear 0s normal none infinite breath;
+  animation: 6000ms linear 0s normal none infinite breath;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000393}}
 #breath h1 {
   margin: 0;
   font-family: Georgia;
@@ -730,62 +697,138 @@ a.fliplink {
   font-weight: normal;
   text-align: center;
   line-height: 0;
-  color: rgba(255, 255, 255, 0.9);
   font-size: 20vw;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003100}}
+#breath h1 a, #breath h1 a:link, #breath h1 a:visited, #breath h1 a:focus {
+  color: rgba(255, 255, 255, 0.9);
+}
 @media (min-width: 40em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000393}}
   #breath h1 {
     font-size: 12vw;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000383}}
-#breath header {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003108}}
+#breath div.text {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #d7ebf2 url("../../03/sky.jpg") center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 50vh;
-  padding: 25vh 0;
+  height: 100%;
+  background-color: #fcf9f1;
+  min-height: 50vh;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000389}}
-#breath header div {
-  -webkit-animation: 6000ms linear 0s normal none infinite breath;
-  animation: 6000ms linear 0s normal none infinite breath;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000394}}
-#breath .body {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003118}}
+#breath div.text .body {
   overflow: hidden;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000396}}
-#breath .body div {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003120}}
+#breath div.text .body div {
   width: 90%;
   margin: 2em auto;
 }
 @media (min-width: 25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000396}}
-  #breath .body div {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003120}}
+  #breath div.text .body div {
     width: 80%;
     margin: 2.5em auto;
   }
 }
 @media (min-width: 40em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\0000396}}
-  #breath .body div {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003120}}
+  #breath div.text .body div {
     width: 45%;
     margin: 3em auto;
   }
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003133}}
+#breath div.text a.fliplink {
+  text-align: center;
+  display: block;
+  font-size: 200%;
+  font-style: italic;
+  margin-top: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003145}}
+#breath article {
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003148}}
+#breath article header {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003158}}
+#breath article div.text {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  z-index: -100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003171}}
+#breath article.flip header {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003174}}
+#breath article.flip div.text {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003185}}
 #presence {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003192}}
 nav {
   display: none;
 }
