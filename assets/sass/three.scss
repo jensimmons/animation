@@ -1,0 +1,147 @@
+// Import Compass: http://compass-style.org
+@import "compass";
+
+// Import additional mixins
+@import "mixins";
+
+// Reset
+@import "normalize";
+* {
+  @include box-sizing(border-box);
+}
+
+// Set universal variables
+@import "variables";
+
+// Import fonts
+@import "fontface";
+@import "typography";
+
+// Import Animation Definitions
+@import "animations";
+
+// ---------------- Universal -----------------------------------------
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+a.link {
+  text-align: center;
+  display: block;
+}
+
+// ---------------- Breath -----------------------------------------
+
+.breath {
+  background-color: #fcf9f1;
+  min-height: 50vh;
+  h1 {
+    margin: 0;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    line-height: 0;
+    color: rgba(255,255,255,0.9);
+    font-size: 20vw;
+    @media (min-width: 40em) { 
+      font-size: 12vw;
+    }      
+  }
+  header {
+    width: 100%;
+    background: #d7ebf2 url('../../03/sky.jpg') center center;
+    @include background-size (cover);
+    height: 50vh;
+    padding:  25vh 0;    
+    div {
+      -webkit-animation: 6000ms linear 0s normal none infinite breath;
+              animation: 6000ms linear 0s normal none infinite breath;
+    }
+  }
+  .body {
+    @include clearfix;
+    div {
+      width: 90%;
+      margin: 2em auto;
+      @media (min-width: 25em) { 
+        width: 80%;
+        margin: 2.5em auto;
+      }
+      @media (min-width: 40em) { 
+        width: 45%;
+        margin: 3em auto;
+      }
+    }
+  }
+}
+
+// ---------------- Action -----------------------------------------
+ .flip {
+   transform: rotateX(180deg);
+ }
+
+
+// ----------------  -----------------------------------------
+
+/*
+.flipbutton a {
+  display: none;
+  position: absolute;
+  top: 51vh;
+  right: 2vh;
+  height:8vh;
+  width:8vh;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius:5vh;
+  transition:all 0.4s ease-in-out;
+  span:first-child {
+    position: absolute;
+    top: .75vh;
+    right: .75vh;
+    background: rgba(255, 255, 255,0.8);
+    height: 6vh;
+    width: 6vh;
+    @include border-radius (6vh);
+    transition:all 0.4s ease-in-out;
+    &:hover {
+      background: rgba(255, 255, 255,0.5);
+      transform:rotateX(180deg);
+      transform:rotateY(180deg);
+      transition:all 0.4s ease-in-out;
+      perspective: 800px;
+      perspective-origin: 50% 100px;
+    }
+  }
+}
+.flipbutton a {
+  display: relative;
+  position: absolute;
+  top: 52.5vh;
+  right: 2vh;
+  background: rgba(0,0,0,0.5);
+  height:5vh;
+  width:5vh;
+  border-radius:5vh;
+  transition:all 0.4s ease-in-out;
+  &:hover {
+  background: rgba(255, 255, 255,0.5);
+    transform:rotateX(180deg);
+    transform:rotateY(180deg);
+    transition:all 0.4s ease-in-out;
+    perspective: 800px;
+    perspective-origin: 50% 100px;
+  }
+  &:active {
+    
+  }
+  span:first-child {
+  position: absolute;
+  top: 0.75vh;
+  right: 0.75vh;
+  background: rgba(255, 255, 255,0.8);
+  height: 2.5vh;
+  width: 2.5vh;
+  border-radius: 2.5vh;
+  }
+} */
