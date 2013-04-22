@@ -21,6 +21,8 @@ body {
   background: #ddd url("../images/electioncrowd.jpg") center center;
   @include background-size (cover);
   color: #ddd;
+  perspective: 1000;
+  transform-style: preserve-3d;
 }
 
 
@@ -117,7 +119,7 @@ figure img {
   @include transition (all 0.4s ease-in-out);
 }
 figcaption {
-  @include transform (rotateY(-180deg));
+  @include transform (rotateY(180deg));
   @include transform-style (preserve-3d);
 	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
 	   -moz-backface-visibility: hidden; // because it doesn't work
