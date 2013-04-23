@@ -36,45 +36,7 @@ a, a:link, a:visited {
 }
 
 
-// ---------------- Action -----------------------------------------
 
-/*
-.flip {
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  transition-property: -webkit-transform;
-  transition-duration: 3s;
-  transition-timing-function: linear;
-  
-  -webkit-transform: scale(0.4);  
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 0;
-  -webkit-transition-timing-function: linear;
-  -webkit-transition-delay: 1s;
-}
-*/
-/* Flipping spinning backwards
-.flip {
-  -webkit-animation: 1s ease-in-out 0s normal none 1 shrinkback;
-  animation: 1s ease-in-out 0s normal none 1 shrinkback;
-  .fliplink {
-    display: none;
-  }
-  transform-style: preserve-3d;
-  
-  transform: scale(0.4);  
-  transition-property: -webkit-transform;
-  transition-duration: 0;
-  transition-timing-function: linear;
-  transition-delay: 1s;
-  
-  -webkit-transform: scale(0.4);  
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 0;
-  -webkit-transition-timing-function: linear;
-  -webkit-transition-delay: 1s;
-}
-*/
 
 // ---------------- Breath -----------------------------------------
 
@@ -106,7 +68,7 @@ a, a:link, a:visited {
     }      
   }
   div.text {
-    backface-visibility: hidden;
+//    backface-visibility: hidden;
     transform: rotateY(180deg);
     position: absolute;
     top: 0;
@@ -142,43 +104,40 @@ a, a:link, a:visited {
     }
   
   }
-  article {
-  	@include perspective(600px);
-  	
-  	header {
-      @include transform (rotateY(0deg));
-      @include transform-style (preserve-3d);
-    	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
-    	   -moz-backface-visibility: hidden; // because it doesn't work
-    	    -ms-backface-visibility: hidden;
-    	     -o-backface-visibility: hidden;
-    	        backface-visibility: hidden;
-      @include transition (all 0.6s ease-in-out);
-    }
-    div.text {
-      @include transform (rotateY(180deg));
-      @include transform-style (preserve-3d);
-    	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
-    	   -moz-backface-visibility: hidden; // because it doesn't work
-    	    -ms-backface-visibility: hidden;
-    	     -o-backface-visibility: hidden;
-    	        backface-visibility: hidden;  
-      @include transition (all .6s ease-in-out);
-      z-index: -100;
-    }
-  }
-  article.flip {
-    header {
-      @include transform (rotateY(-180deg));
-    }
-    div.text {
-      @include transform (rotateY(0deg));
-    }
-  }
-
 }
 
-
+article {
+	@include perspective(600px);
+	
+	header {
+    @include transform (rotateY(0deg));
+    @include transform-style (preserve-3d);
+  	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
+  	   -moz-backface-visibility: hidden; // because it doesn't work
+  	    -ms-backface-visibility: hidden;
+  	     -o-backface-visibility: hidden;
+  	        backface-visibility: hidden;
+    @include transition (all 0.8s ease-in-out);
+  }
+  div.text {
+    @include transform (rotateY(180deg));
+    @include transform-style (preserve-3d);
+  	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
+  	   -moz-backface-visibility: hidden; // because it doesn't work
+  	    -ms-backface-visibility: hidden;
+  	     -o-backface-visibility: hidden;
+  	        backface-visibility: hidden;  
+    @include transition (all .8s ease-in-out);
+  }
+}
+article.flip {
+  header {
+    @include transform (rotateY(-180deg));
+  }
+  div.text {
+    @include transform (rotateY(0deg));
+  }
+}
 
 // ---------------- Presence -----------------------------------------
 

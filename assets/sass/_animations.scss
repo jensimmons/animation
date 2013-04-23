@@ -45,3 +45,46 @@
   100%  {-webkit-transform: rotateX(0deg) scale(0.4)}
 }
 */
+
+
+
+// OLLLLLDLDDD
+// ---------------- Action -----------------------------------------
+
+/*
+.flip {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition-property: -webkit-transform;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  
+  -webkit-transform: scale(0.4);  
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 0;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+}
+*/
+/* Flipping spinning backwards
+.flip {
+  -webkit-animation: 1s ease-in-out 0s normal none 1 shrinkback;
+  animation: 1s ease-in-out 0s normal none 1 shrinkback;
+  .fliplink {
+    display: none;
+  }
+  transform-style: preserve-3d;
+  
+  transform: scale(0.4);  
+  transition-property: -webkit-transform;
+  transition-duration: 0;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  
+  -webkit-transform: scale(0.4);  
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 0;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+}
+*/
