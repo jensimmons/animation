@@ -340,7 +340,7 @@ html {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/two\.scss}line{font-family:\0000320}}
 body {
-  background: #dddddd url("../images/electioncrowd.jpg") center center;
+  background: #dddddd url("../../02/electioncrowd.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
