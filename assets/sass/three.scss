@@ -21,11 +21,13 @@
 @import "animations";
 
 
-// ---------------- Universal -----------------------------------------
+// ----------------------------------------- Universal ------------------------------------------
 
 html {
   background: #000;
-  @include background-image (radial-gradient(farthest-side at 53% 58%, #272F3C 0%, #000 100%));
+  @include background-image (radial-gradient(ellipse at 70% 65%, #272f3C 0%, #212730 50%, #000 100%));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body {
   perspective: 1000;
@@ -38,22 +40,29 @@ a, a:link, a:visited {
 
 
 
-// ---------------- Breath -----------------------------------------
+// ----------------------------------------- Breath ---------------------------------------------
 
 .breath {
+	@include perspective(600px);
+  overflow: hidden;    
   header {
     background: #d8ecf3 url('../../03/sky.jpg') center center;
     @include background-size (cover);
-    height: 100vh;
+    min-height: 100vh;
     padding:  50vh 0;  
     div {
       -webkit-animation: 6000ms linear 0s normal none infinite breath;
               animation: 6000ms linear 0s normal none infinite breath;
     }
+    @include transform (rotateY(0deg));
+    @include transform-style (preserve-3d);
+  	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
+  	   -moz-backface-visibility: hidden; // because it doesn't work
+  	    -ms-backface-visibility: hidden;
+  	     -o-backface-visibility: hidden;
+  	        backface-visibility: hidden;
+    @include transition (all 0.8s ease-in-out);
   }
-
-
-
   h1 {
     margin: 0;
     font-family: Georgia;
@@ -74,7 +83,7 @@ a, a:link, a:visited {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     background: #fcf9f1 url('../images/backgrounds/dust.jpg') center center;
     @include clearfix;
     div {
@@ -89,7 +98,7 @@ a, a:link, a:visited {
         margin: 3em auto;
       }
     }
-    a.fliplink {      
+    a.fliplinktwo {      
       color: rgba(85, 80, 48, 0.4);
       display: block;
       font-family: 'Trebuchet MS', Helvetica, san-serif;
@@ -98,34 +107,9 @@ a, a:link, a:visited {
       text-align: center;
       text-transform: uppercase;
     }
-    a.fliplink:hover {
+    a.fliplinktwo:hover {
       color: rgba(85, 80, 48, 0.6);
     }
-  }
-}
-
-article.flip header {
-  div {
-    -webkit-animation: none;
-            animation: none;
-  }
-}
-
-
-article {
-	@include perspective(600px);
-	
-	header {
-    @include transform (rotateY(0deg));
-    @include transform-style (preserve-3d);
-  	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
-  	   -moz-backface-visibility: hidden; // because it doesn't work
-  	    -ms-backface-visibility: hidden;
-  	     -o-backface-visibility: hidden;
-  	        backface-visibility: hidden;
-    @include transition (all 0.8s ease-in-out);
-  }
-  div.text {
     @include transform (rotateY(180deg));
     @include transform-style (preserve-3d);
   	-webkit-backface-visibility: hidden; // I didn't write this using Compass syntax
@@ -137,30 +121,77 @@ article {
   }
 }
 
-article.flip {
+.flipone article.breath {
   header {
     @include transform (rotateY(-180deg));
+    div {
+      -webkit-animation: none;
+              animation: none;
+    }
   }
   div.text {
     @include transform (rotateY(0deg));
   }
 }
 
-// ---------------- Presence -----------------------------------------
-
-#presence {
-  display: none;
+.fliptwo 
+.breath {
+  display: none;  
 }
 
 
-// ---------------- Navigation -----------------------------------------
+// ----------------------------------------- Meditation -----------------------------------------
+
+.meditation {
+  display: none;
+}
+.fliptwo .meditate {
+  display: block;
+  background: blue;
+  min-height: 100vh;
+  padding: 2em;
+  background: #d8ecf3 url('../../03/mountainlake.jpg') center center;
+  @include background-size (cover);
+  color: #fff;
+  @include text-shadow (0 1px 3px rgba(0,0,0,0.5));
+  text-align: center;
+  font-size: 120%;
+  p {
+    display: none;
+  } 
+}
+
+
+// ----------------------------------------- Presence -------------------------------------------
+
+.presence {
+  display: none;
+}
+
+// ----------------------------------------- Absence --------------------------------------------
+
+.absence {
+  display: none;
+}
+
+// ----------------------------------------- Galaxy ---------------------------------------------
+
+.galaxy {
+  display: none;
+}
+
+// ----------------------------------------- Navigation -----------------------------------------
 
 nav {
   display: none;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
-// ----------------  -----------------------------------------
+// ----------------------------------------------------------------------------------------------
 
 /*
 .flipbutton a {
