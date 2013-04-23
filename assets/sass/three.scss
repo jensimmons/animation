@@ -77,19 +77,17 @@ a, a:link, a:visited {
     height: 100%;
     background-color: #fcf9f1;
     min-height: 50vh;
-    .body {
-      @include clearfix;
-      div {
-        width: 90%;
-        margin: 2em auto;
-        @media (min-width: 25em) { 
-          width: 80%;
-          margin: 2.5em auto;
-        }
-        @media (min-width: 40em) { 
-          width: 45%;
-          margin: 3em auto;
-        }
+    @include clearfix;
+    div {
+      width: 90%;
+      margin: 2em auto;
+      @media (min-width: 25em) { 
+        width: 80%;
+        margin: 2.5em auto;
+      }
+      @media (min-width: 40em) { 
+        width: 45%;
+        margin: 3em auto;
       }
     }
     a.fliplink {
