@@ -103,12 +103,18 @@ a, a:link, a:visited {
       display: block;
       font-family: 'Trebuchet MS', Helvetica, san-serif;
       font-size: 180%;
-      margin-top: 1.4em;
+      margin: 1.4em auto 0;
       text-align: center;
       text-transform: uppercase;
+      text-indent: -9999px;
+      height: 56px;
+      width: 56px;
+      background: url('../images/icons/birdhouse@2x.png') center center no-repeat;
+      opacity: 0.2;
     }
     a.fliplinktwo:hover {
       color: rgba(85, 80, 48, 0.6);
+      opacity: 0.4;
     }
     @include transform (rotateY(180deg));
     @include transform-style (preserve-3d);
@@ -150,7 +156,7 @@ a, a:link, a:visited {
   background: blue;
   min-height: 100vh;
   padding: 2em;
-  background: #d8ecf3 url('../../03/mountainlake.jpg') center center;
+  background: #d8d8d8 url('../../03/mountainlake.jpg') center center;
   @include background-size (cover);
   color: #fff;
   @include text-shadow (0 1px 3px rgba(0,0,0,0.5));
