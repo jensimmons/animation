@@ -798,18 +798,24 @@ a, a:link, a:visited {
   text-align: center;
   text-transform: uppercase;
   text-indent: -9999px;
-  height: 56px;
-  width: 56px;
-  background: url("../images/icons/birdhouse@2x.png") center center no-repeat;
-  opacity: 0.2;
+  height: 120px;
+  width: 120px;
+  background: url("../../03/mountainlakeicon.jpg") center center no-repeat;
+  opacity: 0.6;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  border: 10px solid #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003117}}
 .breath div.text a.fliplinktwo:hover {
   color: rgba(85, 80, 48, 0.6);
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003133}}
 .flipone article.breath header {
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
@@ -817,12 +823,12 @@ a, a:link, a:visited {
   -o-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003135}}
 .flipone article.breath header div {
   -webkit-animation: none;
   animation: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003140}}
 .flipone article.breath div.text {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
@@ -831,18 +837,18 @@ a, a:link, a:visited {
   transform: rotateY(0deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003146}}
 .fliptwo
 .breath {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003153}}
 .meditation {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003156}}
 .fliptwo .meditate {
   display: block;
   background: blue;
@@ -858,27 +864,27 @@ a, a:link, a:visited {
   text-align: center;
   font-size: 120%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003167}}
 .fliptwo .meditate p {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003175}}
 .presence {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003181}}
 .absence {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003187}}
 .galaxy {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jensimmons\/Sites\/Google\%20Chrome\%20Experiment\/animation\/assets\/sass\/three\.scss}line{font-family:\00003193}}
 nav {
   display: none;
   height: 0;

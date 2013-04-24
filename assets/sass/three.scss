@@ -107,14 +107,16 @@ a, a:link, a:visited {
       text-align: center;
       text-transform: uppercase;
       text-indent: -9999px;
-      height: 56px;
-      width: 56px;
-      background: url('../images/icons/birdhouse@2x.png') center center no-repeat;
-      opacity: 0.2;
+      height: 120px;
+      width: 120px;
+      background: url('../../03/mountainlakeicon.jpg') center center no-repeat;
+      opacity: 0.6;
+      @include border-radius (60px);
+      border: 10px solid #fff;
     }
     a.fliplinktwo:hover {
       color: rgba(85, 80, 48, 0.6);
-      opacity: 0.4;
+      opacity: 0.9;
     }
     @include transform (rotateY(180deg));
     @include transform-style (preserve-3d);
